@@ -19,6 +19,33 @@ NameSpacing - isolating resources in OS and
 ==============
 Control groups -- limiting resources per containers
 if you want to run java8 and java6 in same machine, then use namespacing to create different containers
+=========================================================================================
+docker run = docker create + docker start
+*****************************************
+dumpa@Dumpalas MINGW64 /c/Program Files/Docker Toolbox
+$ docker create hello-world
+e3a22a7db0e398a77710528c56baf8af41a1d21ac393e68dd1beb16e587f2bff
+
+dumpa@Dumpalas MINGW64 /c/Program Files/Docker Toolbox
+$ docker start -a e3a22a7db0e398a77710528c56baf8af41a1d21ac393e68dd1beb16e587f2bff                                                                               
+Hello from Docker!
+=========================================================================
+docker system prune --- clear all stopped containers 
+====================================================
+docker logs containerID  - toc see logs
+To get into a container to execute commands in shell 
+Run a command in a running container
+===================================================
+docker exec -it containerID sh 
+dcoker run -it busybox sh 
+******************************************
+
+
+
+
+
+
+
 
 
 
