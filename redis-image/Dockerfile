@@ -1,5 +1,5 @@
 #define base image
-FROM alphine
+FROM alpine
 
 #specify download and install dependencies
 RUN apk add --update redis
