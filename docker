@@ -1,29 +1,24 @@
-Window install
-https://github.com/docker/toolbox/releases
+docker for windows 10 Home - toolbox
 docker.com/toolbox -
 docker --version
 docker run hello-world
-docker run busybox
-
-docker ps
-list of all running conntianers
-docker ps --all
-list of all containers created
-
-NameSpacing - isolating resources in OS and Control groups -- limiting resources per containers
-if you want to run java8 and java6 in same machine, then use namespacing to create different containers
-
-
-http://192.168.99.100:32769/
-
-
+docker run busybox ls
 Increase VM RAM to 4G using below command
 ==========================================
 docker-machine rm default1
 docker-machine create -d virtualbox --virtualbox-memory=4096 --virtualbox-cpu-count=2 default1
 
-docker-compose up kafka-cluster
-docker-machine regenerate-certs --client-certs
+============================================
+docker ps
+list of all running conntianers
+================================
+docker ps --all
+list of all containers created
 
- 
- docker run -e ADV_HOST=192.168.0.23 -e EULA="https://dl.lenses.io/d/?id=e0bbf37b-0e91-42ce-b491-d1f6aa3c2f34" --rm -p  3030:3030 -p 9092:9092 lensesio/box
+NameSpacing - isolating resources in OS and
+==============
+Control groups -- limiting resources per containers
+if you want to run java8 and java6 in same machine, then use namespacing to create different containers
+
+
+
