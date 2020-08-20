@@ -21,6 +21,8 @@ Control groups -- limiting resources per containers
 if you want to run java8 and java6 in same machine, then use namespacing to create different containers
 =========================================================================================
 docker run = docker create + docker start
+docker run = docker create + docker start + docker attach. Without attach, the started container runs in the background 
+
 *****************************************
 dumpa@Dumpalas MINGW64 /c/Program Files/Docker Toolbox
 $ docker create hello-world
@@ -38,6 +40,7 @@ Run a command in a running container
 ===================================================
 docker exec -it containerID sh 
 dcoker run -it busybox sh 
+docker run takes images and docker exec takes container to run commands
 ******************************************
 
 
